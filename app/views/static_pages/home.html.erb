@@ -1,0 +1,10 @@
+<div class="center jumbotron">
+  <h1>Welcome to the Base Auth App</h1>
+  <h2>
+    This is the home page for the Base Auth application.
+  </h2>
+  <h3>Author: Misha Push</h3>
+  <% unless logged_in? %>
+    <%= link_to "Sign up now!" , signup_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
+</div>
